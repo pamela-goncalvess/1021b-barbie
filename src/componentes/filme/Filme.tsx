@@ -3,15 +3,15 @@
  type FilmeProps={
     titulo:string,
     descricao:string,
-    imagem:string
+    foto:string
  }
  export default function Filme(props:FilmeProps){
     return(
         <div className="filme_content" >
             <div className='foto_filme'>  
-                <img src={props.imagem} alt=""/>
+                <img src={props.foto} alt=""/>
             </div>
-            <div className="texto_foto" >
+            <div className="foto_foto" >
                 <h1>{props.titulo}</h1>
                 <p className="descricao">
                     {props.descricao}

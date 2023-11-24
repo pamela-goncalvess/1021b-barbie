@@ -6,8 +6,8 @@ import './Main.css'
 type FilmesType = {
     id: number,
     titulo:string,
-    dsecricao:string,
-    imagem:string
+    descricao:string,
+    foto:string
 };
 
 const URL_API = "http://localhost:3000/filmes";
@@ -54,9 +54,9 @@ export default function Main(){
                     .map((filme) => (
                         <Filme
                             key={filme.id}
-                            descricao={filme.dsecricao}
+                            descricao={filme.descricao}
                             titulo={filme.titulo}
-                            imagem={filme.imagem}
+                            foto={filme.foto}
                         />
                     ))}
             </main>
